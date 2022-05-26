@@ -1,0 +1,24 @@
+.buttons {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    color: #fff
+}
+
+.buttons > button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.buttons > button > .disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+

@@ -1,0 +1,68 @@
+.form-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #888;
+    width: 30vw;
+    height: 400px;
+    padding: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+.form-menu div input, .form-menu div textarea{
+    background-color: rgb(194, 189, 189);
+    font-size: 16px;
+}
+
+.form-menu div input{
+    font-size: 15px;
+    height: 40px;
+    border: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.form-menu div textarea::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+.form-menu div textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.form-menu div textarea:hover::-webkit-scrollbar {
+opacity: 0;
+}
+    
+.form-menu div label{
+    font-weight: 800;
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+}
+
+.form-menu div:not(.buttons){
+    display: flex;
+    flex-direction: column;
+}
+
+.form-menu div textarea {
+    resize: none;
+}
+
+@media(max-width: 512px){
+
+    .form-menu {
+        display: block;
+        margin: 5px auto;
+        width: 80vw;
+    } 
+ 
+ }
+

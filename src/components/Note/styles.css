@@ -1,0 +1,72 @@
+.note {
+    background-color: #808585;
+    width: 280px;
+    height: 280px;
+    margin: 5px 5px;
+
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note h2 {
+    margin-bottom: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    white-space: nowrap;  
+    text-align: center;
+}
+
+.highlight{
+    border: 2px solid #000;
+}
+
+.note p {
+    margin-top: 2px;
+    overflow-y: scroll;
+    overflow-x: none;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.note hr {
+    width: 80%;
+    margin: 15px;
+}
+
+.note h2::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+
+.note p::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px; 
+}
+
+.note p::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.note h2::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.note h2:hover::-webkit-scrollbar-thumb {
+    background: rgb(104, 102, 102);
+  }
+
+.note p:hover::-webkit-scrollbar-thumb {
+    background: rgb(104, 102, 102);
+}
+
+@media(max-width: 512px){
+
+    .note {
+        display: block;
+        margin: 10px auto;
+    } 
+ 
+ }
